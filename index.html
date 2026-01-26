@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofentse Batlang - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Ofentse Batlang</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li class="theme-toggle-container">
+                    <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle" aria-pressed="false">
+                        <span class="theme-icon sun"><i class="fas fa-sun"></i></span>
+                        <span class="theme-icon moon"><i class="fas fa-moon"></i></span>
+                        <span class="theme-toggle-switch"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <!-- Left Column - Profile -->
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="LinkedIn Profile.jpg" alt="Ofentse Batlang" id="heroProfileImg" />
+                </div>
+                <h1>Ofentse Batlang</h1>
+                <p class="title">Web Developer & Designer</p>
+                <div class="social-links">
+                    <a href="https://github.com/ofentsebatlat" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:ofentsebatlang@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ofentse-batlang-1a8330277" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/27786976181" target="_blank" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://x.com/BatlangOfe26346" class="social-icon x-icon" title="X">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ofentsebatlang@gmail.com" class="email-link">ofentsebatlang@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> +27 78 697 6181</p>
+                    <p><i class="fas fa-map-marker-alt"></i> North West, South Africa</p>
+                </div>
+                <a href="Ofentse_Batlang_CV.docx" class="download-cv" download="Ofentse_Batlang_CV.docx">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+
+            <!-- Right Column - Content -->
+            <div class="content-section">
+                <h2>About Me</h2>
+                <p class="intro-text">
+                    Hello! I'm Ofentse, a passionate web developer and designer with expertise in creating beautiful and functional websites. 
+                    I love turning ideas into reality through code and design.
+                </p>
+                
+                <div class="info-section">
+                    <div class="info-item">
+                        <span class="info-label">Age:</span>
+                        <span class="info-value">21</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Residence:</span>
+                        <span class="info-value">South Africa</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Freelance:</span>
+                        <span class="info-value available">Available</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">North West, South Africa</span>
+                    </div>
+                </div>
+
+                <div class="services">
+                    <h3>What I Do</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-code"></i></div>
+                            <h4>Web Development</h4>
+                            <p>Building responsive and interactive websites using modern web technologies.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                            <h4>UI/UX Design</h4>
+                            <p>Creating intuitive and beautiful user interfaces that enhance user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h4>Python</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-java"></i>
+                        <h4>Java</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-globe"></i> Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h4>HTML5</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h4>CSS3</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h4>React</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-network-wired"></i> Networking Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h4>Cisco Routing</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Network Security</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h4>Network Design</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <h4>Git & GitHub</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-linux"></i>
+                        <h4>Linux</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h4>SQL</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern, responsive portfolio website showcasing my work and skills with smooth animations and dark mode.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Network Automation Tool</h3>
+                    <p>Python-based automation tool for configuring Cisco routers and switches, reducing manual configuration time by 70%.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Netmiko</span>
+                        <span class="tech-tag">Cisco IOS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack e-commerce application with user authentication, payment integration, and admin dashboard.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Network Security Scanner</h3>
+                    <p>Vulnerability scanner that identifies security weaknesses in network infrastructure and provides remediation suggestions.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">Security</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Task Management App</h3>
+                    <p>Responsive task management application with drag-and-drop functionality and real-time updates.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Material-UI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Data Visualization Dashboard</h3>
+                    <p>Interactive dashboard for visualizing network traffic patterns and performance metrics in real-time.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Experience & Roles</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Junior Network Administrator</h3>
+                    <p class="company">Tech Solutions Inc.</p>
+                    <p class="duration">January 2024 - Present</p>
+                    <ul>
+                        <li>Managed and maintained network infrastructure for 200+ users</li>
+                        <li>Implemented security protocols reducing vulnerabilities by 40%</li>
+                        <li>Automated routine network tasks using Python scripts</li>
+                        <li>Provided technical support and troubleshooting for network issues</li>
+                    </ul>
+                </div>
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Web Development Intern</h3>
+                    <p class="company">Digital Innovations Ltd.</p>
+                    <p class="duration">June 2023 - December 2023</p>
+                    <ul>
+                        <li>Developed responsive web applications using React and Node.js</li>
+                        <li>Collaborated with design team to implement UI/UX improvements</li>
+                        <li>Optimized website performance resulting in 30% faster load times</li>
+                        <li>Participated in code reviews and agile development processes</li>
+                    </ul>
+                </div>
+                <div class="timeline-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>IT Support Volunteer</h3>
+                    <p class="company">Community Tech Center</p>
+                    <p class="duration">January 2023 - May 2023</p>
+                    <ul>
+                        <li>Provided technical assistance to community members</li>
+                        <li>Taught basic computer skills and internet safety workshops</li>
+                        <li>Maintained lab computers and network equipment</li>
+                        <li>Created documentation for common technical issues</li>
+                    </ul>
+                </div>
+                <div class="timeline-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Freelance Web Developer</h3>
+                    <p class="company">Self-Employed</p>
+                    <p class="duration">August 2022 - Present</p>
+                    <ul>
+                        <li>Built custom websites for small businesses and startups</li>
+                        <li>Managed client relationships and project timelines</li>
+                        <li>Implemented SEO best practices and analytics tracking</li>
+                        <li>Provided ongoing maintenance and support services</li>
+                    </ul>
+                </div>
+                <div class="timeline-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <h3>Cisco CCNA Certification</h3>
+                <p class="issuer">Cisco Networking Academy</p>
+                <p class="date">November 2024</p>
+                <p>Certified in routing, switching, and network fundamentals. Demonstrated proficiency in configuring and troubleshooting network infrastructure.</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">🥇</div>
+                <h3>Best Innovation Award</h3>
+                <p class="issuer">University Tech Hackathon</p>
+                <p class="date">September 2024</p>
+                <p>First place winner for developing an innovative network monitoring solution that reduced downtime by 50%.</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">📜</div>
+                <h3>CompTIA Network+</h3>
+                <p class="issuer">CompTIA</p>
+                <p class="date">July 2024</p>
+                <p>Certified in networking concepts, infrastructure, operations, security, and troubleshooting.</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">⭐</div>
+                <h3>Dean's List Honor</h3>
+                <p class="issuer">XYZ University</p>
+                <p class="date">Spring 2024</p>
+                <p>Recognized for academic excellence with a GPA of 3.8 or higher in Computer Science program.</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">🎖️</div>
+                <h3>Python Programming Certificate</h3>
+                <p class="issuer">Python Institute</p>
+                <p class="date">March 2024</p>
+                <p>Completed advanced Python programming course covering OOP, data structures, and automation.</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">🌟</div>
+                <h3>Cybersecurity Competition Winner</h3>
+                <p class="issuer">Regional CyberDefense Challenge</p>
+                <p class="date">January 2024</p>
+                <p>Led team to victory in regional cybersecurity competition, successfully defending against simulated attacks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h2 style="margin-bottom: 1rem;">Get In Touch</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Feel free to reach out for collaborations or just a friendly chat!</p>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#achievements">Achievements</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/ofentsebatlat" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ofentse-batlang-1a8330277" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:ofentsebatlang@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">
+                <i class="fas fa-envelope"></i> <a href="mailto:ofentsebatlang@gmail.com" class="email-link">ofentsebatlang@gmail.com</a>
+            </p>
+
+            <p class="copyright">
+                &copy; 2025 Ofentse Batlang. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Add a loading class to the body that we'll remove when JS is ready -->
+    <script>
+        // Add no-js class to HTML element if JavaScript is disabled
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+    
+    <!-- Main scripts -->
+    <script src="/js/theme.js"></script>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
