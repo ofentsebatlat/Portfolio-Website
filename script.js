@@ -137,7 +137,105 @@ document.addEventListener('DOMContentLoaded', () => {
     setupMobileMenu();
     setupProfileImage();
     setupSmoothScrolling();
+    
+    // Wait a bit for DOM to be fully ready, then setup pie chart
+    setTimeout(() => {
+        setupPieChart();
+    }, 100);
 
     // Add loaded class to body when everything is ready
     document.body.classList.add('loaded');
 });
+
+// Pie Chart functionality
+function setupPieChart() {
+    console.log('Setting up pie chart...');
+    
+    const canvas = document.getElementById('programmingChart');
+    if (!canvas) {
+        console.error('Canvas not found');
+        return;
+    }
+    
+    console.log('Canvas found:', canvas);
+    
+    const ctx = canvas.getContext('2d');
+    if (!ctx) {
+        console.error('Could not get canvas context');
+        return;
+    }
+    
+    console.log('Canvas context obtained:', ctx);
+    
+    // Set canvas size explicitly
+    canvas.width = 250;
+    canvas.height = 250;
+    
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const radius = Math.min(centerX, centerY) - 20;
+    
+    console.log('Canvas dimensions:', canvas.width, 'x', canvas.height);
+    console.log('Center:', centerX, centerY);
+    console.log('Radius:', radius);
+    
+    // Clear canvas completely
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // Data for the pie chart
+    const data = [
+        { label: 'Visual Basic', value: 20, color: '#2563eb' },
+        { label: 'Java', value: 18, color: '#f59e0b' },
+        { label: 'JavaScript', value: 22, color: '#10b981' },
+        { label: 'Python', value: 25, color: '#8b5cf6' },
+        { label: 'Django', value: 8, color: '#ef4444' },
+        { label: 'React', value: 7, color: '#06b6d4' }
+    ];
+    
+    // Calculate total
+    const total = data.reduce((sum, item) => sum + item.value, 0);
+    console.log('Data total:', total);
+    
+    // Draw pie chart
+    let currentAngle = -Math.PI / 2; // Start from top
+    
+    data.forEach((segment, index) => {
+        const sliceAngle = (segment.value / total) * 2 * Math.PI;
+        
+        console.log(`Drawing segment ${index}: ${segment.label}, angle: ${sliceAngle}`);
+        
+        // Draw segment
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.arc(centerX, centerY, radius, currentAngle, currentAngle + sliceAngle);
+        ctx.closePath();
+        ctx.fillStyle = segment.color;
+        ctx.fill();
+        
+        // Draw border
+        ctx.strokeStyle = '#1a1a1a';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        
+        currentAngle += sliceAngle;
+    });
+    
+    console.log('Pie chart drawn successfully');
+    
+    // Add hover effect
+    canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const dx = x - centerX;
+        const dy = y - centerY;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        
+        if (distance <= radius) {
+            canvas.style.cursor = 'pointer';
+        } else {
+            canvas.style.cursor = 'default';
+        }
+    });
+}

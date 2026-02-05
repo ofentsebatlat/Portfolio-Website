@@ -6,6 +6,14 @@ const port = 3000;
 // Serve static files from the root directory
 app.use(express.static('.'));
 
+// Set correct MIME type for JavaScript modules
+app.use((req, res, next) => {
+  if (req.path.endsWith('.js')) {
+    res.set('Content-Type', 'application/javascript');
+  }
+  next();
+});
+
 // Handle SPA routing - return index.html for all routes
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
